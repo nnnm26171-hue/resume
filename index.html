@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เหมรัศมิ์ พันธุ์ธนวิบูลย์ (มัช) | Portfolio</title>
+<meta name="description" content="พอร์ตโฟลิโอของ นายเหมรัศมิ์ พันธุ์ธนวิบูลย์ (มัช) นักศึกษาสาขาบูรณาการอุตสาหกรรมดิจิทัล มหาวิทยาลัยเชียงใหม่">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Prompt:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="space"></canvas>
+<div class="nebula"></div>
+
+<header class="nav">
+  <a href="#home" class="logo">HP<span>.</span></a>
+  <nav class="links">
+    <a href="#about" data-i18n="nav_about">เกี่ยวกับ</a>
+    <a href="#projects" data-i18n="nav_projects">ผลงาน</a>
+    <a href="#certs" data-i18n="nav_certs">เกียรติบัตร</a>
+    <a href="#contact" data-i18n="nav_contact">ติดต่อ</a>
+  </nav>
+  <div class="lang" id="lang">
+    <button class="lang-btn" id="langBtn" aria-haspopup="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+      <b id="langLabel">TH</b>
+      <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <ul class="lang-menu" id="langMenu">
+      <li data-lang="th" class="active">ไทย (TH)</li>
+      <li data-lang="en">English (EN)</li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="eyebrow" data-i18n="hero_eyebrow">สวัสดีครับผม</p>
+      <h1><span data-i18n="n1">นายเหมรัศมิ์</span> <span class="gold" data-i18n="n2">พันธุ์ธนวิบูลย์</span></h1>
+      <p class="role" id="typed"></p>
+      <p class="lead" data-i18n="hero_lead">นักศึกษาสาขาบูรณาการอุตสาหกรรมดิจิทัล วิทยาลัยศิลปะ สื่อ และเทคโนโลยี มหาวิทยาลัยเชียงใหม่</p>
+      <div class="cta">
+        <a href="#projects" class="btn gold-btn" data-i18n="hero_cta1">ดูผลงาน</a>
+        <a href="#contact" class="btn ghost" data-i18n="hero_cta2">ติดต่อผม</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="planet-wrap"><div class="ring back"></div><div class="planet"></div><div class="ring front"></div></div>
+      <div class="orbit o1"><div class="pw" style="--d:16px;--glow:180,180,180"><canvas class="pl" data-p="mercury"></canvas></div></div>
+      <div class="orbit o2"><div class="pw" style="--d:25px;--glow:255,205,120"><canvas class="pl" data-p="venus"></canvas></div></div>
+      <div class="orbit o3"><div class="pw" style="--d:28px;--glow:94,180,255"><canvas class="pl" data-p="earth"></canvas><span class="moon"></span></div></div>
+      <div class="orbit o4"><div class="pw" style="--d:20px;--glow:255,120,80"><canvas class="pl" data-p="mars"></canvas></div></div>
+      <div class="orbit o5"><div class="pw" style="--d:44px;--glow:235,195,150"><canvas class="pl" data-p="jupiter"></canvas></div></div>
+    </div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <h2 data-i18n="about_title">เกี่ยวกับผม</h2>
+    <div class="card about">
+      <figure class="portrait"><img src="profile.jpg" alt="เหมรัศมิ์ พันธุ์ธนวิบูลย์ (มัช)"></figure>
+      <div class="about-body">
+      <p data-i18n="about_text">ผมชื่อนายเหมรัศมิ์ พันธุ์ธนวิบูลย์ ชื่อเล่น “มัช” ปัจจุบันเป็นนักศึกษาชั้นปีที่ 1 สาขาบูรณาการอุตสาหกรรมดิจิทัล วิทยาลัยศิลปะ สื่อ และเทคโนโลยี มหาวิทยาลัยเชียงใหม่ ตั้งเป้าหมายเป็น Front-end Developer, AI Engineer และ Project Manager</p>
+      <div class="stats facts">
+        <div><b class="sv" data-i18n="f1v">มหาวิทยาลัยเชียงใหม่</b><span data-i18n="f1">มหาวิทยาลัย</span></div>
+        <div><b class="sv" data-i18n="f2v">วิทยาลัยศิลปะ สื่อ และเทคโนโลยี</b><span data-i18n="f2">วิทยาลัย</span></div>
+        <div><b class="sv" data-i18n="f3v">บูรณาการอุตสาหกรรมดิจิทัล</b><span data-i18n="f3">สาขา</span></div>
+        <div><b class="sv" data-i18n="f4v">ปี 1</b><span data-i18n="f4">ชั้นปี</span></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <h2 data-i18n="projects_title">ผลงาน</h2>
+    <div class="level level-uni"><span class="level-badge" data-i18n="lvl_uni">ระดับมหาวิทยาลัย</span><small data-i18n="lvl_uni_sub">มหาวิทยาลัยเชียงใหม่ · ชั้นปีที่ 1</small></div>
+    <div class="level-empty" data-i18n="lvl_empty">กำลังสร้างผลงานใหม่ในระดับมหาวิทยาลัย เร็วๆ นี้</div>
+    <div class="level level-hs"><span class="level-badge" data-i18n="lvl_hs">ระดับมัธยมศึกษา</span><small data-i18n="lvl_hs_sub">โรงเรียนพิษณุโลกพิทยาคม · ปี 2568</small></div>
+    <article class="card work">
+      <div class="work-media">
+        <div class="shots-row portrait-shots">
+          <button class="shot shot-asean-robot" data-full="assets/asean-robot.png" aria-label="ASEAN Robot">
+            <img src="assets/asean-robot.png" alt="โครงสร้างหุ่นยนต์และการติดตั้งกลไก">
+            <span class="shot-tag" data-i18n="shot_asean_robot">กลไกหุ่นยนต์</span>
+          </button>
+          <button class="shot shot-asean-team" data-full="assets/asean-team.png" aria-label="ASEAN Team">
+            <img src="assets/asean-team.png" alt="ทีมงานรับรางวัลบนเวทีการแข่งขัน">
+            <span class="shot-tag" data-i18n="shot_asean_team">ทีมงานผู้แข่งขัน</span>
+          </button>
+        </div>
+      </div>
+      <div class="work-info">
+        <span class="badge" data-i18n="asean_badge">ระดับอาเซียน · 2568</span>
+        <h3>CPU 3rd ASEAN GRAND PRIX<br>YOUTH ROBOTICS 2025</h3>
+        <p class="venue" data-i18n="asean_venue">มหาวิทยาลัยเจ้าพระยา</p>
+        <div class="chips">
+          <div><b data-i18n="asean1v">เหรียญทอง</b><span data-i18n="asean1l">เกียรติบัตร</span></div>
+          <div><b data-i18n="asean2v">ชมเชย (ทองแดง)</b><span data-i18n="asean2l">รางวัลที่ได้รับ</span></div>
+          <div><b data-i18n="asean3v">อาเซียน</b><span data-i18n="asean3l">ระดับการแข่งขัน</span></div>
+        </div>
+        <p data-i18n="asean_intro">ผมได้เข้าร่วมการแข่งขัน CPU 3rd ASEAN GRAND PRIX ซึ่งเป็นการแข่งขันหุ่นยนต์ระดับอาเซียน ชิงถ้วยพระราชทาน จัดขึ้นที่ มหาวิทยาลัยเจ้าพระยา โดยแข่งขันกันเป็นทีมรุ่นมัธยมศึกษาตอนปลาย</p>
+        <div class="role-box"><small data-i18n="asean_rolel">หน้าที่ของผม & ประสบการณ์</small><p data-i18n="asean_role">รับผิดชอบการประกอบหุ่นยนต์ควบคุมจากจอยบังคับ ตั้งแต่ติดตั้งโครงสร้าง มอเตอร์ ไปจนถึงเดินสายไฟให้รองรับระบบควบคุมด้วยจอย ทำให้หุ่นยนต์เคลื่อนที่และปฏิบัติภารกิจในสนามได้อย่างแม่นยำและต่อเนื่อง เก็บลูกภารกิจได้ครบจนได้รับรางวัลชมเชย (เหรียญทองแดง) พร้อมเกียรติบัตรเหรียญทอง</p></div>
+      </div>
+    </article>
+
+    <article class="card work">
+      <div class="work-media">
+        <div class="shots-row mixed-shots">
+          <button class="shot shot-inno-robot" data-full="assets/robot.png" aria-label="Robot">
+            <img src="assets/robot.png" alt="หุ่นยนต์แขนกลที่ใช้แข่งขัน">
+            <span class="shot-tag" data-i18n="shot_inno_robot">หุ่นยนต์และสนาม</span>
+          </button>
+          <button class="shot shot-inno-team" data-full="assets/team.png" aria-label="Team">
+            <img src="assets/team.png" alt="ทีมที่เข้าร่วมแข่งขัน">
+            <span class="shot-tag" data-i18n="shot_inno_team">ทีมงานผู้แข่งขัน</span>
+          </button>
+        </div>
+      </div>
+      <div class="work-info">
+        <span class="badge" data-i18n="w_badge">ระดับประเทศ · 2025</span>
+        <h3>INNOVEDEX ROBOTICS<br>COMPETITION THAILAND 2025</h3>
+        <p class="venue" data-i18n="w_venue">สถาบันเทคโนโลยีไทย-ญี่ปุ่น</p>
+        <div class="chips">
+          <div><b data-i18n="c1v">2 วัน</b><span data-i18n="c1l">ระยะเวลาแข่งขัน</span></div>
+          <div><b data-i18n="c2v">128 ทีม</b><span data-i18n="c2l">จากทั่วประเทศ</span></div>
+          <div><b data-i18n="c3v">32 ทีม</b><span data-i18n="c3l">รอบสุดท้าย</span></div>
+        </div>
+        <p data-i18n="w_intro">ผมได้เข้าร่วมการแข่งขันหุ่นยนต์ระดับประเทศ ณ สถาบันเทคโนโลยีไทย-ญี่ปุ่น ภายใต้โจทย์ที่เน้นการเก็บวัตถุตามสีที่กำหนด และควบคุมหุ่นยนต์ให้ปฏิบัติภารกิจอย่างแม่นยำและรวดเร็ว จัดการแข่งขัน 2 วัน มีทีมเข้าร่วมกว่า 128 ทีมจากทั่วประเทศ</p>
+        <div class="role-box"><small data-i18n="w_rolel">หน้าที่ของผม</small><p data-i18n="w_role">รับผิดชอบเขียนโค้ดควบคุมการเคลื่อนไหวของหุ่นยนต์ ตั้งแต่คำสั่งพื้นฐานไปจนถึงการกำหนดพฤติกรรมอัตโนมัติ เพื่อให้หุ่นยนต์ทำภารกิจได้อย่างแม่นยำ</p></div>
+      </div>
+    </article>
+    <div class="days">
+      <article class="card day">
+        <span class="dn">01</span>
+        <small data-i18n="d1_t">วันที่ 1</small>
+        <h4 data-i18n="d1_h">ได้รับเหรียญทอง</h4>
+        <p data-i18n="d1">ทีมเราทำผลงานได้ยอดเยี่ยมตามกติกาที่ได้รับล่วงหน้า และสามารถตั้งองศาตามสนามได้ หุ่นยนต์เก็บโดนัทและวางลงแท่นได้ครบถ้วน ได้รับเหรียญทอง</p>
+      </article>
+      <article class="card day">
+        <span class="dn">02</span>
+        <small data-i18n="d2_t">วันที่ 2</small>
+        <h4 data-i18n="d2_h">กติกาเซอร์ไพรส์</h4>
+        <p data-i18n="d2">มีกติกาเซอร์ไพรส์ เช่น เพิ่มโดนัทหลอก และให้อีกฝั่งเปลี่ยนรูปแบบพื้นที่วาง ทำให้ต้องปรับกลยุทธ์และแก้โค้ดภายในเวลาจำกัด แม้สุดท้ายจะจบใน 32 ทีมสุดท้ายจาก 128 ทีม แต่ถือเป็นประสบการณ์ที่ท้าทายและมีค่ามาก</p>
+      </article>
+    </div>
+
+    
+    <article class="card work">
+      <div class="work-media">
+        <div class="shots-row mixed-shots">
+          <button class="shot shot-cpe-stage" data-full="assets/cpe-stage.jpg" aria-label="CPE Stage">
+            <img src="assets/cpe-stage.jpg" alt="เวทีการแข่งขัน Coding Box High-School Edition">
+            <span class="shot-tag" data-i18n="shot_cpe_stage">บรรยากาศเวที</span>
+          </button>
+          <button class="shot shot-cpe-selfie" data-full="assets/cpe-selfie.png" aria-label="CPE Selfie">
+            <img src="assets/cpe-selfie.png" alt="การแข่งขันทักษะเขียนโปรแกรมคอมพิวเตอร์ Coding Box 2025">
+            <span class="shot-tag" data-i18n="shot_cpe_selfie">ทีมงานและสนามแข่ง</span>
+          </button>
+        </div>
+      </div>
+      <div class="work-info">
+        <span class="badge" data-i18n="cpe_badge">ระดับประเทศ · 2568</span>
+        <h3>CPE Coding Box<br>High-School Edition 2025</h3>
+        <p class="venue" data-i18n="cpe_venue">ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่</p>
+        <div class="chips">
+          <div><b data-i18n="cpe1v">50+ ทีม</b><span data-i18n="cpe1l">จากทั่วประเทศ</span></div>
+          <div><b data-i18n="cpe2v">3 คน/ทีม</b><span data-i18n="cpe2l">สมาชิกในทีม</span></div>
+          <div><b data-i18n="cpe3v">Top 45</b><span data-i18n="cpe3l">รอบบุคคล (รอบบ่าย)</span></div>
+        </div>
+        <p data-i18n="cpe_intro">ผมได้เข้าร่วมการแข่งขัน CPE Coding Box High-School Edition 2025 จัดโดยภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ ร่วมกับสมาคมสถาบันวิศวกรไฟฟ้าและอิเล็กทรอนิกส์แห่งประเทศไทย (IEEE Thailand Section) มีทีมเข้าร่วมจากหลายโรงเรียนทั่วประเทศรวมกว่า 50 ทีม</p>
+        <div class="role-box"><small data-i18n="cpe_rolel">ความสำเร็จสำคัญ</small><p data-i18n="cpe_role">ผ่านการคัดเลือกเข้าสู่รอบบ่าย (รอบบุคคล) ที่เปิดรับเพียง 45 คนจากผู้เข้าแข่งขันทั้งหมด ถือเป็นรอบที่คัดเลือกเฉพาะผู้ที่มีผลคะแนนยอดเยี่ยมเพียงไม่กี่โรงเรียนเท่านั้น (รอบ 15 โรงเรียนสุดท้าย)</p></div>
+      </div>
+    </article>
+
+    <article class="card work solo">
+      <div class="work-info">
+        <span class="badge" data-i18n="fe_badge">ตัวแทนภูมิภาค · 2568</span>
+        <h3>Fundamentals of Engineering<br>Testing (FE) 2025</h3>
+        <p class="venue" data-i18n="fe_sub">ความถนัดทางวิศวกรรมคอมพิวเตอร์</p>
+        <div class="chips">
+          <div><b data-i18n="fe1v">75/100</b><span data-i18n="fe1l">คะแนนที่ได้รับ</span></div>
+          <div><b data-i18n="fe2v">ระดับประเทศ</b><span data-i18n="fe2l">ผ่านเข้าสู่รอบ</span></div>
+          <div><b data-i18n="fe3v">เหรียญทองแดง</b><span data-i18n="fe3l">ระดับภูมิภาค</span></div>
+        </div>
+        <p data-i18n="fe_intro">ผมได้เข้าร่วมการแข่งขันโครงการ Fundamentals of Engineering Testing (FE) ประจำปี 2568 และผ่านเข้าสู่รอบระดับประเทศในฐานะตัวแทนภูมิภาค ถือเป็นหนึ่งในประสบการณ์สำคัญที่สุดในชีวิตของผม</p>
+        <div class="role-box"><small data-i18n="fe_topicl">หัวข้อที่แข่งขัน</small><p data-i18n="fe_topic">“ความถนัดทางวิศวกรรมคอมพิวเตอร์” เนื้อหาเจาะลึกตั้งแต่พื้นฐานฮาร์ดแวร์ การออกแบบระบบดิจิทัล ไปจนถึงการเขียนโปรแกรมและการคิดเชิงตรรกะ ได้คะแนน 75/100 และคว้ารางวัลเหรียญทองแดงระดับภูมิภาค</p></div>
+      </div>
+    </article>
+  </section>
+
+  <section id="certs" class="section reveal">
+    <h2 data-i18n="certs_title">เกียรติบัตร</h2>
+    <div class="level level-uni"><span class="level-badge" data-i18n="lvl_uni">ระดับมหาวิทยาลัย</span><small data-i18n="lvl_uni_sub">มหาวิทยาลัยเชียงใหม่ · ชั้นปีที่ 1</small></div>
+    <div class="level-empty" data-i18n="lvl_empty_c">ยังไม่มีเกียรติบัตรในระดับมหาวิทยาลัย เร็วๆ นี้</div>
+    <div class="level level-hs"><span class="level-badge" data-i18n="lvl_hs">ระดับมัธยมศึกษา</span><small data-i18n="lvl_hs_sub">โรงเรียนพิษณุโลกพิทยาคม · ปี 2568</small></div>
+    <article class="card cert">
+      <button class="shot cert-img" data-full="assets/certificate-asean.png" aria-label="Certificate ASEAN"><img src="assets/certificate-asean.png" alt="เกียรติบัตรเหรียญทอง CPU 3rd ASEAN GRAND PRIX YOUTH ROBOTICS 2025"></button>
+      <div class="cert-info">
+        <span class="badge gold-badge" data-i18n="asean_award">เหรียญทอง · ระดับอาเซียน</span>
+        <h3>CPU 3rd ASEAN GRAND PRIX<br>YOUTH ROBOTICS 2025</h3>
+        <p data-i18n="asean_by">การแข่งขันหุ่นยนต์และกีฬาอีสปอร์ตระดับอาเซียน ชิงถ้วยพระราชทาน สมเด็จพระกนิษฐาธิราชเจ้า กรมสมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี และ ทูลกระหม่อมหญิงอุบลรัตนราชกัญญา สิริวัฒนาพรรณวดี ครั้งที่ 3</p>
+        <ul class="meta">
+          <li><small data-i18n="asean_il">ผู้มอบ</small><b data-i18n="asean_i">มหาวิทยาลัยเจ้าพระยา</b></li>
+          <li><small data-i18n="ct_dl">วันที่ได้รับ</small><b data-i18n="asean_date">13 กรกฎาคม พ.ศ. 2568</b></li>
+          <li><small data-i18n="cpe_rl">ผลการแข่งขัน</small><b data-i18n="asean_res">รางวัลชมเชย (หุ่นยนต์บังคับมือ KTIS)</b></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="card cert">
+      <button class="shot cert-img" data-full="assets/certificate.png" aria-label="Certificate"><img src="assets/certificate.png" alt="เกียรติบัตรระดับเหรียญทอง Innovedex Robotics Competition 2025"></button>
+      <div class="cert-info">
+        <span class="badge gold-badge" data-i18n="ct_award">ระดับเหรียญทอง</span>
+        <h3>Innovedex Robotics Competition<br>Thailand 2025</h3>
+        <p data-i18n="ct_by">การแข่งขันหุ่นยนต์เยาวชน โครงการ Innovedex Robotics Competition ประจำปี พ.ศ. 2568</p>
+        <ul class="meta">
+          <li><small data-i18n="ct_dl">วันที่ได้รับ</small><b data-i18n="ct_date">10 สิงหาคม พ.ศ. 2568</b></li>
+          <li><small data-i18n="ct_sl">คะแนน</small><b>120</b></li>
+          <li><small data-i18n="ct_nl">ผู้ได้รับ</small><b data-i18n="ct_name">เหมรัศมิ์ พันธุ์ธนวิบูลย์</b></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="card cert">
+      <button class="shot cert-img" data-full="assets/certificate-fe.png" aria-label="Certificate FE"><img src="assets/certificate-fe.png" alt="เกียรติบัตรเหรียญทองแดง Fundamentals of Engineering Testing 2568"></button>
+      <div class="cert-info">
+        <span class="badge bronze-badge" data-i18n="fe_award">เหรียญทองแดง · ระดับภูมิภาค</span>
+        <h3>Fundamentals of Engineering<br>Testing (FE) 2025</h3>
+        <p data-i18n="fe_by">ผ่านเข้าสู่รอบระดับประเทศ โดยได้รับการคัดเลือกเป็นตัวแทนภูมิภาค รายวิชา ความถนัดทางวิศวกรรมคอมพิวเตอร์ รหัสวิชา FE-CE-25S ระดับชั้นมัธยมศึกษาตอนปลาย</p>
+        <ul class="meta">
+          <li><small data-i18n="fe_il">ผู้มอบ</small><b data-i18n="fe_i">สำนักงานพัฒนาและประเมินศักยภาพด้านวิชาชีพ บริษัท แมทธิฟิค เอ็ดดูเคชั่น จำกัด</b></li>
+          <li><small data-i18n="fe_sch">โรงเรียน</small><b data-i18n="fe_s">โรงเรียนพิษณุโลกพิทยาคม</b></li>
+          <li><small data-i18n="ct_dl">วันที่ได้รับ</small><b data-i18n="fe_date">23 สิงหาคม พ.ศ. 2568</b></li>
+          <li><small data-i18n="ct_sl">คะแนน</small><b data-i18n="fe_score">ร้อยละ 75</b></li>
+        </ul>
+      </div>
+    </article>
+  
+    <article class="card cert">
+      <button class="shot cert-img" data-full="assets/certificate-cpe.png" aria-label="Certificate CPE"><img src="assets/certificate-cpe.png" alt="เกียรติบัตรผ่านเข้ารอบแข่งขันทักษะการเขียนโปรแกรม CPE Coding Box 2025"></button>
+      <div class="cert-info">
+        <span class="badge blue-badge" data-i18n="cpe_award">ระดับประเทศ</span>
+        <h3>CPE Coding Box<br>High-School Edition 2025</h3>
+        <p data-i18n="cpe_by">ผ่านเข้ารอบแข่งขันประเภทบุคคล รอบ 15 โรงเรียนสุดท้าย ในกิจกรรมแข่งขันทักษะทางวิชาการ ด้านการเขียนโปรแกรมคอมพิวเตอร์ Coding Box - High School Edition</p>
+        <ul class="meta">
+          <li><small data-i18n="cpe_il">ผู้จัดงาน</small><b data-i18n="cpe_i">ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มช. ร่วมกับ IEEE Thailand Section</b></li>
+          <li><small data-i18n="cpe_vl">สถานที่</small><b data-i18n="cpe_v">คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่</b></li>
+          <li><small data-i18n="ct_dl">วันที่ได้รับ</small><b data-i18n="cpe_date">4 ตุลาคม พ.ศ. 2568</b></li>
+          <li><small data-i18n="cpe_rl">ผลการแข่งขัน</small><b data-i18n="cpe_res">ผ่านเข้ารอบบุคคล (คัดเพียง 45 คน)</b></li>
+        </ul>
+      </div>
+    </article>
+
+  </section>
+
+  <section id="contact" class="section reveal">
+    <h2 data-i18n="contact_title">ติดต่อ</h2>
+    <div class="contact">
+      <aside class="card info">
+        <h3 data-i18n="c_channels">ช่องทางติดต่อ</h3>
+        <div class="row"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><small data-i18n="c_email">อีเมล</small><p>muchhemmarat@gmail.com</p></div></div>
+        <div class="row"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small data-i18n="c_loc">ที่อยู่</small><p data-i18n="c_loc_v">เชียงใหม่ ประเทศไทย</p></div></div>
+      </aside>
+      <form class="card form" id="form">
+        <div class="two">
+          <label><span data-i18n="f_name">ชื่อ</span><input name="name" required data-ph="f_name_ph" placeholder="ชื่อ"></label>
+          <label><span data-i18n="f_email">อีเมล</span><input name="email" type="email" required data-ph="f_email_ph" placeholder="อีเมล"></label>
+        </div>
+        <label><span data-i18n="f_subject">หัวข้อ</span><input name="_subject" required data-ph="f_subject" placeholder="หัวข้อ"></label>
+        <label><span data-i18n="f_msg">ข้อความ</span><textarea name="message" rows="5" required data-ph="f_msg" placeholder="ข้อความ"></textarea></label>
+        <button class="btn gold-btn full" type="submit"><span id="sendTxt" data-i18n="f_send">ส่งข้อความ</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+<div class="lightbox" id="lightbox" hidden><button class="lb-x" aria-label="Close">×</button><img alt=""></div>
+</body>
+</html>
